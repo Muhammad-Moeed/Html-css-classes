@@ -448,7 +448,7 @@ ul{
     padding-top:200px ;
 } */
 
-@media only screen and (min-width:200px)and (max-width:568px){
+/* @media only screen and (min-width:200px)and (max-width:568px){
     body{
         background-color: blue;
     }
@@ -462,4 +462,42 @@ ul{
     background-color: red;
     width: 200px;
     height: 200px;
+} */
+
+
+#box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.boxes{
+    border: 2px solid red;
+    width: 20%;
+    height: 200px;
+    margin-left: 20px;
+    text-align: center;
+    
+}
+
+@media only screen and (max-width:568px){
+  .boxes h1{
+    font-size: 20px;
+  }
+  .boxes{
+    width: 50% !important;
+    margin-top: 20px;
+    background-color: blue;
+    color: #fff;
+    width: 80% !important;
+  }
+}
+@media only screen and (min-width:569px) and (max-width:768px){
+    .boxes h1{
+        font-size: 20px;
+      }
+      .boxes{
+        margin-top: 20px;
+        background-color: coral;
+      }
 }
